@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema base de la ventana; los colores de Compose se definen en ui/theme/Theme.kt -->
+    <style name="Theme.Equishare" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/marca_primario</item>
+    </style>
+
+    <!-- Pantalla de inicio con el logo mientras la app arranca (Jetpack SplashScreen). -->
+    <style name="Theme.Equishare.Inicio" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/marca_primario</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.Equishare</item>
+    </style>
+</resources>
